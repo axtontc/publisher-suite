@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+publisher/__init__.py
+publisher/cli.py
+publisher/core/__init__.py
+publisher/core/document_core.py
+publisher/core/publish_core.py
+publisher_suite.egg-info/PKG-INFO
+publisher_suite.egg-info/SOURCES.txt
+publisher_suite.egg-info/dependency_links.txt
+publisher_suite.egg-info/entry_points.txt
+publisher_suite.egg-info/requires.txt
+publisher_suite.egg-info/top_level.txt

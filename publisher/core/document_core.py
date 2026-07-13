@@ -1,5 +1,7 @@
 import os
 import requests
+from publisher.core.models import get_model
+
 
 def analyze_directory(path):
     structure = []
@@ -35,7 +37,7 @@ def run_document(path):
     
     try:
         res = requests.post("http://localhost:11434/api/generate", json={
-            "model": "qwen2.5-coder:7b",
+            "model": get_model("llm"),
             "prompt": prompt,
             "stream": False
         }, timeout=60)

@@ -1,0 +1,2 @@
+[console_scripts]
+publisher = publisher.cli:main
