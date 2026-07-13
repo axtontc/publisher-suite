@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "publisher-suite"
+version = "1.0.0"
+description = "A Master Publishing and Documentation CLI for AI Agents."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [
+  { name = "Axton Carroll" }
+]
+dependencies = [
+    "requests"
+]
+
+[project.scripts]
+publisher = "publisher.cli:main"
