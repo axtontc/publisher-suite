@@ -42,7 +42,7 @@ cd publisher-suite
 pip install .
 ```
 
-For the documentation feature, ensure you have a local Ollama instance running `qwen2.5-coder:7b`.
+For the documentation feature, ensure you have a local Ollama instance running. Models are dynamically pulled from `~/.gemini/config/models.json`.
 For the publishing feature, ensure you have a `GITHUB_TOKEN` environment variable set, or saved in your local `credentials.json`.
 
 ---
