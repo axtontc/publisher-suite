@@ -89,8 +89,11 @@ def run_publish(path, is_public):
     if os.path.exists(readme_path):
         try:
             with open(readme_path, "r", encoding="utf-8") as f:
-                first_lines = [f.readline() for _ in range(5)]
-                description = " ".join([l.strip() for l in first_lines if l.strip() and not l.startswith("#")])[:100]
+                for line in f.readlines():
+                    l = line.strip()
+                    if l and not l.startswith(("#", "<", "[!")):
+                        description = l[:100]
+                        break
         except Exception: pass
     else:
         with open(readme_path, "w", encoding="utf-8") as f:
